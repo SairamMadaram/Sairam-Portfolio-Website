@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sairam Portfolio Website</title>
+  <link rel = "stylesheet" href = "style.css">
+  <script src="https://kit.fontawesome.com/21fb8d14a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id ="header">
+      <div class="container">
+          <nav>
+            <h1 class="logo"><span>P</span>ortfolio</h1>
+            <ul id="sidemenu">
+              <li> <a href = "#header">Home</a></li>
+              <li> <a href = "#about">About</a></li>
+              <li> <a href = "#certificates">Certificates</a></li>
+              <li> <a href = "#Projects">Projects</a></li>
+              <li> <a href = "#resume">Resume</a></li>
+              <li> <a href = "#Contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class ="header-text">
+              <p> Welcome </p>
+              <h1> Hi, I'm <span1>Sairam</span1> <br></h1>
+              <p>As a recent graduate, I bring fresh perspectives and a hunger to learn. I am eager to apply my knowledge and continue growing in a dynamic environment. I am excited to connect with professionals and explore opportunities that will allow me to contribute meaningfully and further develop my expertise.</p>
+          </div>
+
+          <div class ="social-icons-first">
+            <a href="https://www.linkedin.com/in/sairam-madaram-3aa633298"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/sairam.madaram?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a> 
+            <a href="https://instagram.com/sairam_madaram?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/SairamMadaram"><i class="fa-brands fa-github"></i></a>
+          </div>
+      </div>
+      <div class="design">
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+  </div>
+
+   <!-- ---------------About Me-------------- -->
+
+  <div id = "about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+             <img src = "./photos/Graduation.jpg"></img>
+        </div>
+        <div class="about-col-2">
+            <h1 class ="sub-title"> About Me</h1>
+            <p class="about-text">
+              I am a mechanical graduate from CVR College of Engineering, transitioning into the software field with a strong foundation in engineering principles and a passion for technology. Equipped with skills in HTML, CSS, JavaScript, Java, SQL etc.
+            </p>
+            <div class = "tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('value added course')">Value Added Course</p>
+            </div>
+            <div class ="tab-contents active-tab" id="skills">
+              <ul>
+                <li> <span2>Programming Languages :</span2> C, Java </li>
+                <li> <span2>Web Development :</span2> HTML, CSS, JavaScript </li> 
+                <li> <span2>Operating Systems :</span2> Windows 10, Windows 11 </li>
+                <li> <span2>Database :</span2> SQL, DBMS </li>
+                <li> <span2>Software and Tools :</span2> Microsoft Office (Word, Excel, PowerPoint), Creo Parametric, AutoCAD, ANSYS Workbench</li>
+              </ul>
+            </div>
+            <div class ="tab-contents" id="education">
+              <ul>
+                <li><span>2019-2023</span><br>Studied at CVR College Of Engineering</li>
+                <li><span>2017-2019</span><br>Studied at Jagtuthi Junior College</li>
+                <li><span>2016-2017</span><br>Studied at Zilla Parishad High School</li>
+              </ul>
+            </div>
+            <div class ="tab-contents" id="value added course">
+              <ul>
+                <li><span>10:2023-04:2024</span><br>Junior FullStack Java Developer</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ----------------certificates-------------- --> 
+  <div id="certificates">
+    <div class="container">
+        <h1 class ="sub-title"> Certificates</h1>
+        <div class="certificates-list">
+          <div class="accenture">
+              <i class="fa-solid fa-certificate"></i>
+              <h2> Accenture Developer Program</h2>
+              <p>Completed the Accenture Developer Program, gaining practical skills and industry insights.</p>
+              <a href="./pdf/Accenture Certificate.pdf">View Certificate </a>
+          </div>
+          <div>
+              <i class="fa-solid fa-robot"></i>
+              <h2>Generative AI Fundamentals with Google Cloud</h2>
+              <p>Certified in Generative AI Fundamentals with Google Cloud, proficient in utilizing AI for innovative solutions.</p>
+              <a href="./pdf/Genetative AI Fundementals.pdf">View Certificate</a>
+          </div>
+          <div>
+              <i class="fa-brands fa-java"></i>
+              <h2> JAVA </h2>
+              <p>Certified in Java, proficient in developing robust and scalable applications.</p>
+              <a href="./pdf/Java.pdf">View Certificate</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2> SQL </h2>
+            <p>Certified in SQL, adept at managing and manipulating databases efficiently.</p>
+            <a href="./pdf/Sql.pdf">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+   <!-- </div>
+     <a href ="#" class="btn">See More</a>
+   </div> -->
+
+   <!-- See More Addition Here -->
+   <div class="content">
+    <!-- <p>Here is some initial content that is always visible.</p> -->
+    <div class="more-content" id="moreContent">
+        <div class="certificates-list">
+          <div class="accenture">
+              <i class="fa-brands fa-html5"></i>
+              <h2> HTML </h2>
+              <p>Certified in HTML, demonstrating proficiency in creating and structuring web content.</p>
+              <a href="./pdf/HTML.pdf">View Certificate </a>
+          </div>
+          <div>
+              <i class="fa-brands fa-css3"></i>
+              <h2>CSS</h2>
+              <p>Certified in CSS, showcasing skills in designing and styling web pages.</p>
+              <a href="./pdf/CSS.pdf">View Certificate</a>
+          </div>
+          <div>
+              <i class="fa-brands fa-bootstrap"></i>
+              <h2> Bootstrap </h2>
+              <p>Certified in Bootstrap, capable of creating responsive and mobile-first web designs.</p>
+              <a href="./pdf/Bootstrap.pdf">View Certificate</a>
+          </div>
+          <div class="accenture">
+            <i class="fa-brands fa-github"></i>
+            <h2> Git&Github </h2>
+            <p>Certified in Git & GitHub, experienced in version control and collaborative software development.</p>
+            <a href="./pdf/Git&Github.pdf">View Certificate </a>
+        </div>
+        <div>
+            <i class="fa-solid fa-robot"></i>
+            <h2> Spring </h2>
+            <p>Certified in Spring, skilled in building enterprise-level Java applications.</p>
+            <a href="./pdf/Spring.pdf">View Certificate</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-react"></i>
+            <h2> React </h2>
+            <p>Certified in React, proficient in building modern and performant web applications.</p>
+            <a href="./pdf/React.pdf">View Certificate</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-angular"></i>
+            <h2> Angular </h2>
+            <p>Certified in Angular, skilled in developing dynamic and robust single-page applications.</p>
+            <a href="./pdf/Angular.pdf">View Certificate</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2> Learn How to Use AI for Coading </h2>
+            <p>Learned how to use AI for coding, enhancing development efficiency and capabilities.</p>
+            <a href="./pdf/Learn How to Use AI for Coading.pdf">View Certificate</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-python"></i>
+            <h2> Python </h2>
+            <p>Certified in Python, demonstrating expertise in versatile and high-level programming.</p>
+            <a href="./pdf/Python.pdf">View Certificate</a>
+        </div>
+        <div>
+            <i class="fa-brands fa-java"></i>
+            <h2> Advance Java </h2>
+            <p>Certified in Advanced Java, experienced in developing complex and enterprise-grade applications.</p>
+            <a href="./pdf/Advance Java.pdf">View Certificate</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-shield"></i>
+          <h2> Cyber Security </h2>
+          <p>Certified in Cyber Security, knowledgeable in protecting systems and data from digital threats.</p>
+          <a href="./pdf/CyberSecurity.pdf">View Certificate</a>
+      </div>
+      </div>
+  </div>
+    <button class="btn" id="seeMoreBtn">See More</button>
+  </div>
+
+<!-- End -->
+  </div>
+  <!-- -----------------------Portfolio---------------------- -->
+  <div id ="Projects">
+    <div class ="container">
+        <h1 class ="sub-title"> My Projects </h1>
+        <div class="work-list">
+        <div class= "work">
+          <img src ="./photos/Major project 4.jpg">
+          <div class ="layer">
+            <h3> Heat Transfer Analysis and Optimization of Engine Fins </h3>
+            <p> The main aim of the project is to analyse the thermal properities by varying geometry, material and thickness of engine fins. </p>
+              <a href="./pdf/major report .pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class= "work">
+          <img src ="./photos/MinorProject.jpeg">
+          <div class ="layer">
+            <h3> Modelling and Analysis of knuckle joint by using CREO and ANSYS</h3>
+            <p> The objective of this project is to design and analysis the structural deformation and stress in a Knuckle joint.</p>
+              <a href="./pdf/Mini project .pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class= "work">
+          <img src ="./photos/Team Project 3.jpg">
+          <div class ="layer">
+            <h3> Power Generation from Ocean Waves</h3>
+            <p>The project is about harnessing the wave power by converting wave energy into electrical energy.</p>
+              <a href="./major project 3.jpg"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <a href ="#" class="btn">See More</a>
+    </div>
+  </div>
+  
+  <!-------------------------- Resume ---------------------->
+
+  <section id="resume">
+    <div class="container">
+        <div class="row">
+          <h1 class ="sub-title2"> My Resume </h1>
+            <div class="col-md-6 col-sm-12 col-xs-12">
+                <div class="education-container">
+                    <ul class="edu-list">
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-school"></i></div>
+                            <strong>2017 - 2019</strong>
+                            <h5>Intermediate</h5>
+                            <p>Learned important math and physics needed for a Bachelor's degree. These subjects improved my problem-solving and analytical skills. Used what I learned in real-life projects to better understand these topics.</p>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <strong>2019 - 2023</strong>
+                            <h5>Bachelors of Technology</h5>
+                            <p>Studied mechanical engineering, gaining expertise in designing and analyzing mechanical systems. Applied theoretical knowledge to hands-on projects, developing practical problem-solving skills essential for the field.</p>
+                        </li>
+                        <li>
+                            <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <strong>2023 - 2024</strong>
+                            <h5>Junior FullStack Java Developer</h5>
+                            <p>Successfully completed the NSDC-accredited Junior Fullstack Java Developer course, specializing in Java programming and fullstack development. Gained hands-on experience in building robust web applications. Developed skills in front-end technologies such as HTML, CSS, and JavaScript, complementing back-end proficiency for comprehensive fullstack development</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- -----------------------Contact ------------------- -->
+  <div id ="Contact">
+    <div class ="container">
+      <div class="row">
+        <div class="contact-left">
+              <h1 class ="sub-title"> Contact Me </h1>
+              <p><i class="fa-solid fa-paper-plane"></i>sairammadaram@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i>8074198007</p>
+              <div class ="social-icons">
+                <a href="https://www.linkedin.com/in/sairam-madaram-3aa633298"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/sairam.madaram?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a> 
+                <a href="https://instagram.com/sairam_madaram?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/SairamMadaram"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <a href="./pdf/M.Sairam Resume.pdf" Download class = "btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type ="text" name="Name" placeholder="Your Name" required></input>
+            <input type ="email" name="Email" placeholder="Your Email" required></input>
+            <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form> 
+          <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright 	&#169; Sairam. Made with <i class="fa-solid fa-heart"></i> by Sairam Madaram</p>
+  </div>
+</div>
+<!-- ---------------scroll up button------------- -->
+
+<button id="scrollUpBtn" title="Go to top">&#8679;</button>
+
+<!-- End -->
+  <script src="script.js"></script>
+</body>
+</html>
