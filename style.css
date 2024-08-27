@@ -107,7 +107,7 @@
  .circle:nth-child(2){
     width: 10vw;
     height: 10vw;
-    background-image: url(./photos/Ai2.jpg);
+    background-image: url(./photos/Picsart.jpg);
   
     background-size: 97%;
     background-position: center;
@@ -468,7 +468,7 @@
   content: '';
   width: 80px;
   height: 3px;
-  background-color: #2EC4B6;
+/*   background-color: #2EC4B6; */
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1084,10 +1084,10 @@ nav .fa-solid{
   }
 }
 
-@media only screen and (max-height: 800px)  {
+@media only screen and (min-width: 1024px) and (max-height: 800px)  {
   .circle:nth-child(2) {
-    width: 15vw;
-    height: 15vw;
+    width: 17vw;
+    height: 17vw;
     top: 50%;
     left: 82%;
     transform: translate(-50%, -50%);
